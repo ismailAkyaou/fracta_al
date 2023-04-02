@@ -6,7 +6,7 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 16:04:54 by yagnaou           #+#    #+#             */
-/*   Updated: 2023/03/31 20:41:36 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/02 20:52:35 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,10 @@ typedef struct s_data {
 	int 	cursor_x;
 	int 	cursor_y;
 	int		status;
+	double 	zoom;
+	int 	x1;
+	int 	y1;
+	int 	it_max;
 }		 t_data;
 
 	void  	mandelbrot(int a, int b, t_data *data);
@@ -67,6 +71,6 @@ typedef struct s_data {
 	int 	ft_close(t_data *data);
 	int		ft_strncmp(const char *s1, const char *s2, size_t n);
 	int 	mouse_hook(int button, int x,int y, t_data *data);
-
+	// int		ft_zoom_up(int zoom, int x, int y, t_data *data);
 
 #endif

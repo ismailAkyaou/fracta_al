@@ -6,7 +6,7 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 14:53:25 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/03/31 20:45:57 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/02 20:20:33 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void  julia(int a, int b, t_data *data)
     int iteration = 0;
     float tmp;
 
-    z.real = (a - WIDTH/2) * (4.0 / WIDTH);
-    z.imag = (b - HEIGHT/2) * (4.0 / HEIGHT);
+    z.real = (a - WIDTH/2) * (4.0 / WIDTH * data->zoom);
+    z.imag = (b - HEIGHT/2) * (4.0 / HEIGHT * data->zoom);
     while (z.real * z.real + z.imag * z.imag < 4  &&  iteration < 80) 
     {
         tmp = z.real * z.real - z.imag * z.imag + data->julia_arg.real;
@@ -29,6 +29,6 @@ void  julia(int a, int b, t_data *data)
     }
     if (iteration < 80)
     {
-        my_mlx_pixel_put(data, a, b, 0x8BF5FA - iteration * 2000/80);
+        my_mlx_pixel_put(data, a, b, 0x865DFF - iteration * 2000/80);
     }
 }

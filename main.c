@@ -6,7 +6,7 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 18:37:00 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/03/31 20:44:44 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/02 20:53:38 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,16 @@ int mouse_hook(int button, int x,int y, t_data *data)
         data->julia_arg.real = (x - WIDTH/2) * (4.0 / WIDTH);
         data->julia_arg.imag = (y - HEIGHT/2) * (4.0 / HEIGHT);
         render(data);
-        // puts("yes yes");
+    }
+    else if (button == 4)
+    {
+        data->zoom += 2;
+        render(data);
+    }
+    else if (button == 5)
+    {
+        data->zoom /= 2;
+        render(data);
     }
     return (0);
 }
@@ -45,9 +54,9 @@ int main(int ac, char **av)
         mlx_hook(data.win, 2, 0, &ft_key_check, &data);
         mlx_hook(data.win, 17, 0, &ft_close, &data);
         render(&data);
-        // mlx_loop_hook(data.ptr, &render, &data);
         mlx_mouse_hook(data.win, mouse_hook, &data);
         mlx_loop(data.ptr);
+        // mlx_mouse_hook(data.ptr, ft_zoom_up, &data);
     }
     else
         write(1,"Not Valiid\n",9);

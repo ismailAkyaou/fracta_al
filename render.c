@@ -6,7 +6,7 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 17:29:38 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/03/30 20:41:17 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/02 20:27:59 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ int render(t_data *data)
 		while (x < WIDTH)
 		{
 			if (data->status == MANDELBROT)
-				mandelbrot(x++, y, data);
+				mandelbrot(x, y, data);
 			else if (data->status == JULIA)
-				julia(x++, y, data);
+				julia(x, y, data);
+			x++;
 		}
 		y++;
 	}
@@ -51,6 +52,7 @@ void    ft_init(t_data *data, char **av)
 	data->max_iteratins = 80;
 	data->julia_arg.real = 0.15;
 	data->julia_arg.imag = 0.58;
+	data->zoom = 1;
 
 	if (!(ft_strncmp(av[1], "mandelbrot", 11)))
 	{
