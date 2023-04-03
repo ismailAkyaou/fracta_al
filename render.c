@@ -6,11 +6,11 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 17:29:38 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 20:42:21 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:50:00 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 int	render(t_data *data)
 {

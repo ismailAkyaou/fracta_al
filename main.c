@@ -6,11 +6,11 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 18:37:00 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 20:08:10 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:49:40 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 int	mouse_hook(int button, int x, int y, t_data *data)
 {

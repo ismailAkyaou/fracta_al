@@ -6,11 +6,11 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 20:13:31 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 00:10:38 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:49:00 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 int	ft_key_check(int key, t_data *data)
 {

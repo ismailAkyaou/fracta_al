@@ -6,11 +6,11 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 03:48:43 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 20:09:23 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:49:57 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 void	mandelbrot(int a, int b, t_data *data)
 {

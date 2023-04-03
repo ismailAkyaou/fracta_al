@@ -6,11 +6,11 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 14:53:25 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 03:18:40 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:49:36 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 void	julia(int a, int b, t_data *data)
 {

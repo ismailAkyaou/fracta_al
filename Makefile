@@ -1,4 +1,4 @@
-NAME = fractol
+NAME = fractal
 
 CFLAGS		=	-g -Wall -Wextra -Werror
 
@@ -14,12 +14,12 @@ COMPILER	=	cc
 APPEND		=	ar -rc
 DELETE		=	rm -f
 
-%.o:	%.c fractol.h
+%.o:	%.c fractal.h
 	${COMPILER} ${CFLAGS}  -Imlx -c $< -o $@
 
 all:	${NAME}
 
-${NAME}:	${OBJECTS} fractol.h
+${NAME}:	${OBJECTS} fractal.h
 	cc $(OBJECTS) -lmlx -framework OpenGL -framework AppKit  -o $(NAME)
 
 clean:

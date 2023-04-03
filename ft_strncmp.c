@@ -6,11 +6,11 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 01:39:18 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 00:19:34 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:49:33 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractal.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

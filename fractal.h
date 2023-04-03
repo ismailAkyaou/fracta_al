@@ -6,12 +6,12 @@
 /*   By: iakyaou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 00:17:05 by iakyaou           #+#    #+#             */
-/*   Updated: 2023/04/03 20:33:09 by iakyaou          ###   ########.fr       */
+/*   Updated: 2023/04/03 20:48:49 by iakyaou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRACTOL_H
-# define FRACTOL_H
+#ifndef FRACTAL_H
+# define FRACTAL_H
 
 # include	"mlx.h"
 # include	<stdlib.h>
